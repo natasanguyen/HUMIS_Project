@@ -77,6 +77,12 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
             nav {
                 min-height: 60%
             }
+
+            .links {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
         }
 
         .right-side {
@@ -121,5 +127,4 @@ h4 {
     border-bottom: 2px dashed red;
     font-weight: unset;
     margin: 0 0 5px;
-    0
 }
