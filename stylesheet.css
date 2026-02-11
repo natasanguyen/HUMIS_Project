@@ -25,7 +25,7 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
     flex-direction: column;
     justify-content: space-between;
 
-    nav { /*applies to all nav tags found inside (descendants of) section.main-content-area */
+    nav.secondary { /*applies to all nav tags found inside (descendants of) section.main-content-area */
         min-height: 20px;
         border: 1px dotted red;
         text-align: right;
@@ -75,7 +75,14 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
             }
 
             nav {
-                min-height: 60%
+                a {
+                    display: block;
+
+                    &:hover {
+                        color: white;
+                        background-color: black;
+                    }
+                }
             }
 
             .links {
