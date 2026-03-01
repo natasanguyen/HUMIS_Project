@@ -1,17 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #292626;
+    background-color: #292626;;
 }
 
 div#parent { /* declaration or "selector */
     border: 1px solid black;
     width: 780px;
-    margin: 0 auto;
+    margin: 65px auto;
     background-color: #fff;
 }
 
 div#parent section {
-    border: 1px solid black;
+    /*border: 1px solid #009fc3;*/
+}
+
+section.header {
+    height: 102px;
 }
 
 section.sub-head {
@@ -32,10 +36,10 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
 
     nav.secondary { /*applies to all nav tags found inside (descendants of) section.main-content-area */
         min-height: 20px;
-        border: 1px dotted red;
+        /*border: 1px dotted red;*/
         /*text-align: right;*/
         padding-right: 20px;
-        font-size: 11px;
+        font-size: 9px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -53,11 +57,16 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
         }
 
         &.bottom {
-            font-size: 9px;
+            font-size: 8px;
 
             a {
                 text-transform: lowercase;
             }
+        }
+
+        img {
+            height: 11px;
+            margin-left: 5px;
         }
     }
 
@@ -65,7 +74,7 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
         background-color: #bec4a1;
         padding: 20px;
         border-radius: 10px;
-        min-height: 400px;
+        min-height: 490px;
         display: flex;
         justify-content: space-between;
         width: 90%;
@@ -78,6 +87,7 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;
 
             nav {
                 a {
@@ -85,9 +95,10 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
                     display: block;
                     text-decoration: none;
                     border-bottom: 2px solid #60663e;
-                    padding: 8px 0 8px 12px;
+                    padding: 12px 0 8px 12px;
                     text-transform: uppercase;
-                    font-size: 11px;
+                    font-size: 10px;
+                    width: 160px;
 
                     &:hover {
                         color: white;
@@ -97,9 +108,7 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
             }
 
             .links {
-                display: flex;
-                flex-direction: column-reverse;
-                align-items: center;
+                width: 90%;
             }
         }
 
@@ -107,6 +116,7 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
             width: 62%;
             background-color: white;
             padding: 10px;
+            height: fit-content;
 
             img {
                 width: 100%;
@@ -114,15 +124,17 @@ section.main-content-area { /* declaration for a section tag whose class is "mai
             }
 
             p {
-                font-size: 10px;
+                font-size: 11px;
             }
 
             div.more {
                 text-align: right;
 
                 a {
-                    color: red;
+                    color: #cc0000;
                     text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 10px;
 
                     &:hover {
                         text-decoration: underline;
@@ -137,13 +149,16 @@ section.footer {
     background-color: #60663e;
     text-align: center;
     color: white;
-    font-size: 11px;
+    font-size: 8px;
     padding: 8px;
 }
 
 h4 {
-    color: red;
+    color: #60663e;
     border-bottom: 2px dashed red;
     font-weight: unset;
-    margin: 0 0 5px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 0 0 2px;
 }
